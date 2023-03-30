@@ -1,0 +1,8 @@
+1.-¿Cuál es el rol de la llamada a la función execvp?
+Tiene como tarea el remplazar el proceso actual con uno nuevo, en este caso ls. De igualmanera, busca en el PATH el archivo llamado, siempre y cuando no incluya el caracter '/'.
+2.-¿Qué se almacena en la variable child_pid?
+Se almacena el process id del proceso hijo que jenera la función fork.
+3.-¿Bajo qué circunstancias veríamos el mensaje “returning from execvp()” de la línea 16?
+se vería siempre y cuando el llamado a la función execvp falla.
+4.-¿Por qué el último elemento de arg_list es NULL?
+El comando execvp necesita que el arreglo de apuntadores char *const argv[] termine en un apuntador a nulo.

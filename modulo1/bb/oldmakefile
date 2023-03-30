@@ -1,0 +1,30 @@
+CC = gcc
+
+#PREFIX = $(PWD)
+
+all: minibusybox
+
+minibusybox: minibusybox_ArmandoCorrea.o 
+	$(CC) -o minibusybox minibusybox_ArmandoCorrea.o 
+
+minibusybox.o: minibusybox_ArmandoCorrea.c 
+	$(CC)  -c minibusybox_ArmandoCorrea.c
+
+clean:
+	rm -f *.o minibusybox
+
+install: all
+	#@echo "Adding $(PWD) to PATH..."
+	#@echo 'export PATH="$${PATH}:$(PWD)"' >> ~/.zshrc
+	ln -sf $(PWD)/minibusybox $(PREFIX)/my_sleep;
+	ln -sf $(PWD)/minibusybox $(PREFIX)/my_uname;
+	ln -sf $(PWD)/minibusybox $(PREFIX)/my_mkdir;
+	ln -sf $(PWD)/minibusybox $(PREFIX)/my_chmod
+
+uninstall:
+	#@echo "Removing $(PWD) from PATH..."
+	#@grep -v 'export PATH="$${PATH}:$(PWD)"' ~/.zshrc > ~/.zshrc.new && mv ~/.zshrc.new ~/.zshrc
+	rm -f $(PREFIX)/my_sleep
+	rm -f $(PREFIX)/my_uname
+	rm -f $(PREFIX)/my_mkdir
+	rm -f $(PREFIX)/my_chmod

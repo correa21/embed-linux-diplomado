@@ -1,0 +1,4 @@
+¿Porqué la salida no es igual a 20000000?
+Porque ambos hilos estan accediendo a un mismo recurso al mismo tiempo, lo que provoca sobreescrituras y perdidas de datos.
+¿Qué característica de Linux provoca que esta situación pase?
+que es un sistema multiusuario, es decir que varios procesos pueden ejecutarse simultáneamente y acceder a los mismos recursos compartidos.

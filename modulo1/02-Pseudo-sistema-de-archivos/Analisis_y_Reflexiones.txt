@@ -1,0 +1,2 @@
+El código lo que realiza es la lectura de un argumento de entrada, en este caso un archivo asociado al input que genera el mouse.
+Una vez que abre el archivo, este espera a que se genere una entrada en el mismo y escribe en pantalla el valor, tiempo, codigo y tipo de entrada que se generó. Esta lectura es solo de los primeros 100 eventos.

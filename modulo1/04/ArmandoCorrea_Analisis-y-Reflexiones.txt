@@ -1,0 +1,3 @@
+1.-Analiza el archivo fuente e identifica todos los posibles puntos de fuga de memoria. ¿Podrías calcular cuánta memoria se fuga?
+Primero podria generarse una fuga de memoria al utilizar malloc, siempre y cuando no liberemos el espacio con su respectivo free(). Despues se puede generar otra fuga, si al apuntador en donde se guarda el valor de retorno de la función strdup() ya se le había asignado una dirección de memoria previa. Por ultimo, hay una fuga de memoria cuando al apuntador path se le asigna el valor de NULL, ya que este pierde su referencia.
+En cuanto a cuanta memoria se pierde, se podría decir que son 100 bytes por iteracion

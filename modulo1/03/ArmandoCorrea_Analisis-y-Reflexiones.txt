@@ -1,0 +1,8 @@
+1.-¿Por qué el valor de la variable 1 se incrementa y de la variable 2 no?
+    Porque la variable 1 está definida como una variable estática lo que hace que se guarde en una dirección distinta te memoria y conserve su valor cada que termina la ejecución de la función foo. Mientras que la variable 2 es propia de la función foo y cada que termina su ejecución se borra ese espacio de memoria.
+2.-¿Cómo se puede explicar la “cercanía” entre las direcciones de las variables 2 y 4 ?
+La variable 4 es el argumento de entrada de la función foo, a la cual se le raliza una alocación de memoria en cuanto se llama a la función. Mientras que, la variable 2 es una variable creada y a la cual se le asigna un valor por primera vez en el llamado de la función foo, por lo que debe de ser asignada a la siguiente locación disponible despues de la variable 4.
+3.-¿Qué hace la línea 38 del código?
+Retorna un 0 para indicar que terminó de ejutarse la función main.
+4.-Modifica memory_regions.c para que su ejecución provoque un stack overflow y explica tu razonamiento detrás de las modificaciones.
+Ya que el stack es un espacio asignado a guardar la memoria utilizada en llamados de funciones, y las variables de estas, lo más sencillo para provocar un stack overflow es el ralizar un llamado recurrente de una función dentro de ella misma sin ninguna manera de interrumpir el proceso.
