@@ -1,0 +1,6 @@
+clk-ctrl.c:77:14:clk_ti_ctrl_get_rate	0	static
+clk-ctrl.c:82:12:clk_ti_ctrl_of_xlate	0	static
+clk-ctrl.c:99:12:clk_ti_ctrl_of_to_plat	32	static
+clk-ctrl.c:24:12:clk_ti_ctrl_check_offs.isra.0	16	static
+clk-ctrl.c:37:12:clk_ti_ctrl_disable	24	static
+clk-ctrl.c:57:12:clk_ti_ctrl_enable	24	static

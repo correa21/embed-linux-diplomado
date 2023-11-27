@@ -1,0 +1,13 @@
+.am335x-sl50.dtb.pre.o: arch/arm/dts/.am335x-sl50.dtb.pre.tmp \
+ /home/armando/diplomado/modulo3/u-boot/include/linux/kconfig.h \
+ include/generated/autoconf.h \
+ /home/armando/diplomado/modulo3/u-boot/arch/arm/dts/am33xx.dtsi \
+ /home/armando/diplomado/modulo3/u-boot/arch/arm/dts/include/dt-bindings/bus/ti-sysc.h \
+ /home/armando/diplomado/modulo3/u-boot/arch/arm/dts/include/dt-bindings/gpio/gpio.h \
+ /home/armando/diplomado/modulo3/u-boot/arch/arm/dts/include/dt-bindings/pinctrl/am33xx.h \
+ /home/armando/diplomado/modulo3/u-boot/arch/arm/dts/include/dt-bindings/pinctrl/omap.h \
+ /home/armando/diplomado/modulo3/u-boot/arch/arm/dts/include/dt-bindings/clock/am3.h \
+ /home/armando/diplomado/modulo3/u-boot/arch/arm/dts/am33xx-l4.dtsi \
+ /home/armando/diplomado/modulo3/u-boot/arch/arm/dts/am33xx-clocks.dtsi \
+ /home/armando/diplomado/modulo3/u-boot/arch/arm/dts/tps65217.dtsi \
+ /home/armando/diplomado/modulo3/u-boot/arch/arm/dts/am33xx-u-boot.dtsi

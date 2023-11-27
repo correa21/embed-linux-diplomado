@@ -1,0 +1,2 @@
+efi_setup.c:24:13:allow_unaligned	0	static
+efi_setup.c:183:14:efi_init_obj_list	48	static

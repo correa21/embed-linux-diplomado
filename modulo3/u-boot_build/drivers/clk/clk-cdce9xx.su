@@ -1,0 +1,6 @@
+clk-cdce9xx.c:89:12:cdce9xx_clk_request	8	static
+clk-cdce9xx.c:63:12:cdce9xx_reg_read	16	static
+clk-cdce9xx.c:76:12:cdce9xx_reg_write	16	static
+clk-cdce9xx.c:99:12:cdce9xx_clk_probe	56	static
+clk-cdce9xx.c:176:14:cdce9xx_clk_set_rate	40	static
+clk-cdce9xx.c:164:14:cdce9xx_clk_get_rate	24	static

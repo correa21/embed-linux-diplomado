@@ -1,0 +1,1 @@
+cmd_/home/armando/diplomado/modulo4/firstMod/basic.ko := arm-linux-gnueabi-ld -r  -EL -z noexecstack   --build-id=sha1  -T scripts/module.lds -o /home/armando/diplomado/modulo4/firstMod/basic.ko /home/armando/diplomado/modulo4/firstMod/basic.o /home/armando/diplomado/modulo4/firstMod/basic.mod.o;  true

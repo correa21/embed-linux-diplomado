@@ -1,0 +1,9 @@
+wdt-uclass.c:231:12:wdt_post_bind	0	static
+wdt-uclass.c:253:12:wdt_pre_probe	24	static
+wdt-uclass.c:97:5:wdt_start	24	static
+wdt-uclass.c:72:5:initr_watchdog	40	static
+wdt-uclass.c:115:5:wdt_stop	16	static
+wdt-uclass.c:133:5:wdt_stop_all	24	static
+wdt-uclass.c:158:5:wdt_reset	0	static
+wdt-uclass.c:168:5:wdt_expire_now	16	static
+wdt-uclass.c:195:6:watchdog_reset	24	static

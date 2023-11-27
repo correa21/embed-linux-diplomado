@@ -1,0 +1,296 @@
+
+U-Boot SPL 2022.04-dirty (May 30 2023 - 01:17:12 -0600)
+Trying to boot from MMC1
+
+
+U-Boot 2022.04-dirty (May 30 2023 - 01:17:12 -0600)
+
+CPU  : AM335X-GP rev 2.1
+Model: TI AM335x BeagleBone Black
+DRAM:  512 MiB
+Core:  150 devices, 14 uclasses, devicetree: separate
+WDT:   Started wdt@44e35000 with servicing (60s timeout)
+NAND:  0 MiB
+MMC:   OMAP SD/MMC: 0, OMAP SD/MMC: 1
+Loading Environment from FAT... OK
+Net:   eth2: ethernet@4a100000, eth3: usb_ether [PRIME]
+Hit any key to stop autoboot:  2  1  0 
+using musb-hdrc, OUT ep1out IN ep1in STATUS ep2in
+MAC f8:dc:7a:00:00:02
+HOST MAC f8:dc:7a:00:00:01
+RNDIS ready
+musb-hdrc: peripheral reset irq lost!
+high speed config #2: 2 mA, Ethernet Gadget, using RNDIS
+USB RNDIS network up!
+Using usb_ether device
+TFTP from server 192.168.0.1; our IP address is 192.168.0.100
+Filename 'myApp.bin'.
+Load address: 0x80300000
+Loading: *##################################################  1.8 KiB
+	 301.8 KiB/s
+done
+Bytes transferred = 1857 (741 hex)
+## Starting application at 0x80300001 ...
+Actual U-Boot ABI version 9
+holaMundo!!! This is my personal U-Boot
+#     #                                                                        #                                              ###
+#     # ###### #      #       ####     ##### #    # #  ####     #  ####       # #   #####  #    #   ##   #    # #####   ####  ###  ####     #####   ####   ####  ##### #       ####    ##   #####  ###### #####
+#     # #      #      #      #    #      #   #    # # #         # #          #   #  #    # ##  ##  #  #  ##   # #    # #    #  #  #         #    # #    # #    #   #   #      #    #  #  #  #    # #      #    #
+####### #####  #      #      #    #      #   ###### #  ####     #  ####     #     # #    # # ## # #    # # #  # #    # #    # #    ####     #####  #    # #    #   #   #      #    # #    # #    # #####  #    #
+#     # #      #      #      #    #      #   #    # #      #    #      #    ####### #####  #    # ###### #  # # #    # #    #          #    #    # #    # #    #   #   #      #    # ###### #    # #      #####
+#     # #      #      #      #    #      #   #    # # #    #    # #    #    #     # #   #  #    # #    # #   ## #    # #    #     #    #    #    # #    # #    #   #   #      #    # #    # #    # #      #   #
+#     # ###### ###### ######  ####       #   #    # #  ####     #  ####     #     # #    # #    # #    # #    # #####   ####       ####     #####   ####   ####    #   ######  ####  #    # #####  ###### #    #
+## Application terminated, rc = 0x0
+using musb-hdrc, OUT ep1out IN ep1in STATUS ep2in
+MAC f8:dc:7a:00:00:02
+HOST MAC f8:dc:7a:00:00:01
+RNDIS ready
+musb-hdrc: peripheral reset irq lost!
+high speed config #2: 2 mA, Ethernet Gadget, using RNDIS
+USB RNDIS network up!
+Using usb_ether device
+TFTP from server 192.168.0.1; our IP address is 192.168.0.100
+Filename 'zImage'.
+Load address: 0x81000000
+Loading: *##################################################  6.5 MiB
+	 4.1 MiB/s
+done
+Bytes transferred = 6848552 (688028 hex)
+using musb-hdrc, OUT ep1out IN ep1in STATUS ep2in
+MAC f8:dc:7a:00:00:02
+HOST MAC f8:dc:7a:00:00:01
+RNDIS ready
+musb-hdrc: peripheral reset irq lost!
+high speed config #2: 2 mA, Ethernet Gadget, using RNDIS
+USB RNDIS network up!
+Using usb_ether device
+TFTP from server 192.168.0.1; our IP address is 192.168.0.100
+Filename 'am335x-boneblack.dtb'.
+Load address: 0x82000000
+Loading: *##################################################  61.4 KiB
+	 3 MiB/s
+done
+Bytes transferred = 62828 (f56c hex)
+Kernel image @ 0x81000000 [ 0x000000 - 0x688028 ]
+## Flattened Device Tree blob at 82000000
+   Booting using the fdt blob at 0x82000000
+   Loading Device Tree to 8ffed000, end 8ffff56b ... OK
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Gracias por haber participado en el Módulo 3
+[    0.000000] Linux version 5.10.152-dirty (uidr7643@TQLA337W-ubuntu) (arm-linux-gnueabi-gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #2 SMP Mon Oct 31 09:14:18 CST 2022
+[    0.000000] CPU: ARMv7 Processor [413fc082] revision 2 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] OF: fdt: Machine model: TI AM335x BeagleBone Black
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] cma: Reserved 16 MiB at 0x9e800000
+[    0.000000] Zone ranges:
+[    0.000000]   Normal   [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000]   HighMem  empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000080000000-0x000000009fdfffff]
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] AM335X ES2.1 (sgx neon)
+[    0.000000] percpu: Embedded 20 pages/cpu s49740 r8192 d23988 u81920
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 129412
+[    0.000000] Kernel command line: root=/dev/nfs rw ip=192.168.0.100:::::usb0 console=ttyS0,115200n8 g_ether.dev_addr=f8:dc:7a:00:00:02 g_ether.host_addr=f8:dc:7a:00:00:01 nfsroot=192.168.0.1:/home/armando/diplomado/modulo3/nfsroot,nfsvers=3,tcp
+[    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes, linear)
+[    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes, linear)
+[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off
+[    0.000000] Memory: 484832K/522240K available (10240K kernel code, 1040K rwdata, 2204K rodata, 1024K init, 281K bss, 21024K reserved, 16384K cma-reserved, 0K highmem)
+[    0.000000] rcu: Hierarchical RCU implementation.
+[    0.000000] rcu: 	RCU event tracing is enabled.
+[    0.000000] rcu: 	RCU restricting CPUs from NR_CPUS=2 to nr_cpu_ids=1.
+[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 10 jiffies.
+[    0.000000] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.000000] NR_IRQS: 16, nr_irqs: 16, preallocated irqs: 16
+[    0.000000] IRQ: Found an INTC at 0x(ptrval) (revision 5.0) with 128 interrupts
+[    0.000000] TI gptimer clocksource: always-on /ocp/interconnect@44c00000/segment@200000/target-module@31000
+[    0.000011] sched_clock: 32 bits at 24MHz, resolution 41ns, wraps every 89478484971ns
+[    0.000030] clocksource: dmtimer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635851949 ns
+[    0.000426] TI gptimer clockevent: 24000000 Hz at /ocp/interconnect@48000000/segment@0/target-module@40000
+[    0.001897] Console: colour dummy device 80x30
+[    0.001970] Calibrating delay loop... 996.14 BogoMIPS (lpj=4980736)
+[    0.090517] pid_max: default: 32768 minimum: 301
+[    0.090672] LSM: Security Framework initializing
+[    0.090778] Mount-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.090795] Mountpoint-cache hash table entries: 1024 (order: 0, 4096 bytes, linear)
+[    0.091837] CPU: Testing write buffer coherency: ok
+[    0.091928] CPU0: Spectre v2: using BPIALL workaround
+[    0.092326] CPU0: thread -1, cpu 0, socket -1, mpidr 0
+[    0.093199] Setting up static identity map for 0x80100000 - 0x80100078
+[    0.093417] rcu: Hierarchical SRCU implementation.
+[    0.093988] smp: Bringing up secondary CPUs ...
+[    0.094008] smp: Brought up 1 node, 1 CPU
+[    0.094019] SMP: Total of 1 processors activated (996.14 BogoMIPS).
+[    0.094029] CPU: All CPU(s) started in SVC mode.
+[    0.094742] devtmpfs: initialized
+[    0.106863] VFP support v0.3: implementor 41 architecture 3 part 30 variant c rev 3
+[    0.107182] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 19112604462750000 ns
+[    0.107214] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+[    0.108523] pinctrl core: initialized pinctrl subsystem
+[    0.110417] NET: Registered protocol family 16
+[    0.113259] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.132407] l3-aon-clkctrl:0000:0: failed to disable
+[    0.133182] audit: initializing netlink subsys (disabled)
+[    0.134370] thermal_sys: Registered thermal governor 'fair_share'
+[    0.134383] thermal_sys: Registered thermal governor 'step_wise'
+[    0.134398] thermal_sys: Registered thermal governor 'user_space'
+[    0.134667] cpuidle: using governor menu
+[    1.013526] audit: type=2000 audit(0.120:1): state=initialized audit_enabled=0 res=1
+[    1.131898] No ATAGs?
+[    1.131926] hw-breakpoint: debug architecture 0x4 unsupported.
+[    1.150327] Kprobes globally optimized
+[    1.159469] iommu: Default domain type: Translated 
+[    1.161343] vgaarb: loaded
+[    1.161859] SCSI subsystem initialized
+[    1.163010] pps_core: LinuxPPS API ver. 1 registered
+[    1.163030] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    1.163055] PTP clock support registered
+[    1.164233] clocksource: Switched to clocksource dmtimer
+[    1.823933] VFS: Disk quotas dquot_6.6.0
+[    1.824054] VFS: Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
+[    1.833882] NET: Registered protocol family 2
+[    1.834320] IP idents hash table entries: 8192 (order: 4, 65536 bytes, linear)
+[    1.835252] tcp_listen_portaddr_hash hash table entries: 512 (order: 0, 6144 bytes, linear)
+[    1.835310] TCP established hash table entries: 4096 (order: 2, 16384 bytes, linear)
+[    1.835358] TCP bind hash table entries: 4096 (order: 3, 32768 bytes, linear)
+[    1.835419] TCP: Hash tables configured (established 4096 bind 4096)
+[    1.835548] UDP hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    1.835576] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes, linear)
+[    1.835744] NET: Registered protocol family 1
+[    1.836808] RPC: Registered named UNIX socket transport module.
+[    1.836831] RPC: Registered udp transport module.
+[    1.836840] RPC: Registered tcp transport module.
+[    1.836849] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    1.836870] PCI: CLS 0 bytes, default 64
+[    1.838353] hw perfevents: enabled with armv7_cortex_a8 PMU driver, 5 counters available
+[    1.839972] Initialise system trusted keyrings
+[    1.840463] workingset: timestamp_bits=14 max_order=17 bucket_order=3
+[    1.841667] NFS: Registering the id_resolver key type
+[    1.841763] Key type id_resolver registered
+[    1.841774] Key type id_legacy registered
+[    1.841831] jffs2: version 2.2. (NAND) (SUMMARY)  © 2001-2006 Red Hat, Inc.
+[    1.842204] Key type asymmetric registered
+[    1.842223] Asymmetric key parser 'x509' registered
+[    1.842245] io scheduler mq-deadline registered
+[    1.842255] io scheduler kyber registered
+[    1.977904] gpiochip_add_data_with_key: GPIOs 0..31 (gpio-0-31) failed to register, -517
+[    1.977945] omap_gpio 44e07000.gpio: Could not register gpio chip -517
+[    2.081171] ti-sysc: probe of 44e31000.target-module failed with error -16
+[    2.116556] ti-sysc: probe of 48040000.target-module failed with error -16
+[    2.181687] gpiochip_add_data_with_key: GPIOs 0..31 (gpio-0-31) failed to register, -517
+[    2.181728] omap_gpio 4804c000.gpio: Could not register gpio chip -517
+[    2.235317] gpiochip_add_data_with_key: GPIOs 0..31 (gpio-0-31) failed to register, -517
+[    2.235356] omap_gpio 481ac000.gpio: Could not register gpio chip -517
+[    2.245923] gpiochip_add_data_with_key: GPIOs 0..31 (gpio-0-31) failed to register, -517
+[    2.245957] omap_gpio 481ae000.gpio: Could not register gpio chip -517
+[    2.303229] debugfs: Directory '49000000.dma' with parent 'dmaengine' already present!
+[    2.303278] edma 49000000.dma: TI EDMA DMA engine driver
+[    2.325104] pinctrl-single 44e10800.pinmux: 142 pins, size 568
+[    2.338849] Serial: 8250/16550 driver, 6 ports, IRQ sharing enabled
+[    2.342479] printk: console [ttyS0] disabled
+[    2.342676] 44e09000.serial: ttyS0 at MMIO 0x44e09000 (irq = 20, base_baud = 3000000) is a 8250
+[    3.069824] printk: console [ttyS0] enabled
+[    3.087268] brd: module loaded
+[    3.099125] loop: module loaded
+[    3.104530] mtdoops: mtd device (mtddev=name/number) must be supplied
+[    3.174485] davinci_mdio 4a101000.mdio: davinci mdio revision 1.6, bus freq 1000000
+[    3.185261] davinci_mdio 4a101000.mdio: phy[0]: device 4a101000.mdio:00, driver SMSC LAN8710/LAN8720
+[    3.194877] cpsw 4a100000.ethernet: initialized cpsw ale version 1.4
+[    3.201268] cpsw 4a100000.ethernet: ALE Table size 1024
+[    3.206858] cpsw 4a100000.ethernet: cpts: overflow check period 500 (jiffies)
+[    3.214098] cpsw 4a100000.ethernet: Detected MACID = 3c:e4:b0:e3:69:2d
+[    3.224669] am335x-phy-driver 47401300.usb-phy: supply vcc not found, using dummy regulator
+[    3.233361] am335x-phy-driver 47401300.usb-phy: dummy supplies not allowed for exclusive requests
+[    3.243800] am335x-phy-driver 47401b00.usb-phy: supply vcc not found, using dummy regulator
+[    3.252580] am335x-phy-driver 47401b00.usb-phy: dummy supplies not allowed for exclusive requests
+[    3.273404] udc-core: couldn't find an available UDC - added [g_ether] to list of pending drivers
+[    3.282481] i2c /dev entries driver
+[    3.288027] cpuidle: enable-method property 'ti,am3352' found operations
+[    3.295700] sdhci: Secure Digital Host Controller Interface driver
+[    3.301915] sdhci: Copyright(c) Pierre Ossman
+[    3.307105] sdhci-pltfm: SDHCI platform and OF driver helper
+[    3.315355] sdhci-omap 481d8000.mmc: supply vqmmc not found, using dummy regulator
+[    3.324834] ledtrig-cpu: registered to indicate activity on CPUs
+[    3.332945] Initializing XFRM netlink socket
+[    3.337568] NET: Registered protocol family 10
+[    3.343660] Segment Routing with IPv6
+[    3.347551] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+[    3.354366] NET: Registered protocol family 17
+[    3.358869] NET: Registered protocol family 15
+[    3.363452] Key type dns_resolver registered
+[    3.368389] oprofile: using arm/armv7
+[    3.372177] ThumbEE CPU extension supported.
+[    3.376552] Registering SWP/SWPB emulation handler
+[    3.381769] omap_voltage_late_init: Voltage driver support not added
+[    3.388242] sr_dev_init: No voltage domain specified for smartreflex0. Cannot initialize
+[    3.396401] sr_dev_init: No voltage domain specified for smartreflex1. Cannot initialize
+[    3.404815] SmartReflex Class3 initialized
+[    3.409357] mmc1: SDHCI controller on 481d8000.mmc [481d8000.mmc] using External DMA
+[    3.418009] Loading compiled-in X.509 certificates
+[    3.442414] OMAP GPIO hardware version 0.1
+[    3.474942] tps65217-pmic: Failed to locate of_node [id: -1]
+[    3.488085] tps65217-bl: Failed to locate of_node [id: -1]
+[    3.496472] tps65217 0-0024: TPS65217 ID 0xe version 1.2
+[    3.502514] omap_i2c 44e0b000.i2c: bus 0 rev0.11 at 400 kHz
+[    3.512079] omap_i2c 4819c000.i2c: bus 2 rev0.11 at 100 kHz
+[    3.526546] using random self ethernet address
+[    3.531036] using random host ethernet address
+[    3.535573] using host ethernet address: f8:dc:7a:00:00:01
+[    3.535580] using self ethernet address: f8:dc:7a:00:00:02
+[    3.541893] usb0: HOST MAC f8:dc:7a:00:00:01
+[    3.551765] usb0: MAC f8:dc:7a:00:00:02
+[    3.555699] using random self ethernet address
+[    3.560176] using random host ethernet address
+[    3.564906] g_ether gadget: Ethernet Gadget, version: Memorial Day 2008
+[    3.571551] g_ether gadget: g_ether ready
+[    3.578324] omap_gpio 44e07000.gpio: Could not set line 6 debounce to 200000 microseconds (-22)
+[    3.587161] sdhci-omap 48060000.mmc: Got CD GPIO
+[    3.592076] sdhci-omap 48060000.mmc: supply vqmmc not found, using dummy regulator
+[    3.627646] mmc0: SDHCI controller on 48060000.mmc [48060000.mmc] using External DMA
+[    3.641475] mmc1: new high speed MMC card at address 0001
+[    3.648381] mmcblk1: mmc1:0001 M62704 3.56 GiB 
+[    3.653534] mmcblk1boot0: mmc1:0001 M62704 partition 1 2.00 MiB
+[    3.660153] mmcblk1boot1: mmc1:0001 M62704 partition 2 2.00 MiB
+[    3.666675] mmcblk1rpmb: mmc1:0001 M62704 partition 3 512 KiB, chardev (249:0)
+[    3.676134]  mmcblk1: p1
+[    3.703640] mmc0: new high speed SDHC card at address 0001
+[    3.710357] mmcblk0: mmc0:0001 SD16G 14.6 GiB 
+[    3.717188]  mmcblk0: p1 p2
+[    4.324268] IPv6: ADDRCONF(NETDEV_CHANGE): usb0: link becomes ready
+[    4.354366] IP-Config: Guessing netmask 255.255.255.0
+[    4.359453] IP-Config: Complete:
+[    4.362700]      device=usb0, hwaddr=f8:dc:7a:00:00:02, ipaddr=192.168.0.100, mask=255.255.255.0, gw=255.255.255.255
+[    4.373329]      host=192.168.0.100, domain=, nis-domain=(none)
+[    4.379374]      bootserver=255.255.255.255, rootserver=192.168.0.1, rootpath=
+[    4.443008] VFS: Mounted root (nfs filesystem) on device 0:16.
+[    4.449635] devtmpfs: mounted
+[    4.453998] Freeing unused kernel memory: 1024K
+[    4.474760] Run /sbin/init as init process
+Starting syslogd: OK
+Starting klogd: OK
+Running sysctl: OK
+Initializing random number generator: OK
+Saving random seed: [    5.484403] random: dd: uninitialized urandom read (32 bytes read)
+OK
+Starting network: ip: RTNETLINK answers: File exists
+FAIL
+Starting dropbear sshd: [    5.759854] random: dropbear: uninitialized urandom read (32 bytes read)
+OK
+
+Welcome to Buildroot
+buildroot login: root
+Password: 
+# pwd
+/root
+# ls
+foo.txt           hello_world.bin   test              testapp
+hello_world       hello_world.srec  test.c
+# cat foo# cat foo.txt 
+hi
+# 

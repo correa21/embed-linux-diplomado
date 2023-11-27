@@ -1,0 +1,1 @@
+cmd_/home/armando/diplomado/modulo4/firstMod/Module.symvers := sed 's/ko$$/o/' /home/armando/diplomado/modulo4/firstMod/modules.order | scripts/mod/modpost -m -a   -o /home/armando/diplomado/modulo4/firstMod/Module.symvers -e -i Module.symvers   -T -

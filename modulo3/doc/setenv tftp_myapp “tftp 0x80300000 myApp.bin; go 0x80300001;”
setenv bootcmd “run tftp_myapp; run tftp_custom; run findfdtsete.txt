@@ -1,0 +1,4 @@
+setenv tftp_myapp “tftp 0x80300000 myApp.bin; go 0x80300001;”
+setenv bootcmd “run tftp_myapp; run tftp_custom; run findfdt; run
+init_console; run finduuid; run distro_bootcmd”
+saveenv

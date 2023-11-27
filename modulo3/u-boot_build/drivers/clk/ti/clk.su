@@ -1,0 +1,4 @@
+clk.c:50:6:clk_ti_writel	4	static
+clk.c:57:5:clk_ti_readl	16	static
+clk.c:36:6:clk_ti_latch	16	static
+clk.c:80:5:clk_ti_get_reg_addr	32	static

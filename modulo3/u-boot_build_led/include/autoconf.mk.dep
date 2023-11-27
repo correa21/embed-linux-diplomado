@@ -1,0 +1,298 @@
+include/config/auto.conf: \
+ /home/armando/diplomado/modulo3/boo/include/common.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/kconfig.h \
+ include/generated/autoconf.h include/config.h \
+ /home/armando/diplomado/modulo3/boo/include/config_defaults.h \
+ /home/armando/diplomado/modulo3/boo/include/config_uncmd_spl.h \
+ /home/armando/diplomado/modulo3/boo/include/configs/am335x_evm.h \
+ /home/armando/diplomado/modulo3/boo/include/configs/ti_am335x_common.h \
+ include/asm/arch/omap.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/sizes.h \
+ /home/armando/diplomado/modulo3/boo/include/configs/ti_armv7_omap.h \
+ /home/armando/diplomado/modulo3/boo/include/configs/ti_armv7_common.h \
+ /home/armando/diplomado/modulo3/boo/include/config_distro_bootcmd.h \
+ /home/armando/diplomado/modulo3/boo/include/environment/ti/dfu.h \
+ /home/armando/diplomado/modulo3/boo/include/environment/ti/mmc.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/config.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/kconfig.h \
+ /home/armando/diplomado/modulo3/boo/include/config_fallbacks.h \
+ /home/armando/diplomado/modulo3/boo/include/errno.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/errno.h \
+ /home/armando/diplomado/modulo3/boo/include/time.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/typecheck.h \
+ /home/armando/diplomado/modulo3/boo/include/asm-offsets.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/bitops.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/types.h \
+ /home/armando/diplomado/modulo3/boo/include/asm-generic/bitsperlong.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/compiler.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/compiler-gcc.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/types.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/posix_types.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/stddef.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/posix_types.h \
+ /usr/lib/gcc-cross/arm-linux-gnueabi/9/include/stdbool.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/bitops.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/proc-armv/system.h \
+ /home/armando/diplomado/modulo3/boo/include/asm-generic/bitops/__fls.h \
+ /home/armando/diplomado/modulo3/boo/include/asm-generic/bitops/__ffs.h \
+ /home/armando/diplomado/modulo3/boo/include/asm-generic/bitops/fls.h \
+ /home/armando/diplomado/modulo3/boo/include/asm-generic/bitops/fls64.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/bug.h \
+ /home/armando/diplomado/modulo3/boo/include/vsprintf.h \
+ /usr/lib/gcc-cross/arm-linux-gnueabi/9/include/stdarg.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/build_bug.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/printk.h \
+ /home/armando/diplomado/modulo3/boo/include/stdio.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/delay.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/kernel.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/string.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/string.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/linux_string.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/stringify.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/ptrace.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/proc-armv/ptrace.h \
+ /home/armando/diplomado/modulo3/boo/include/part.h \
+ /home/armando/diplomado/modulo3/boo/include/blk.h \
+ /home/armando/diplomado/modulo3/boo/include/efi.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/linkage.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/linkage.h \
+ /home/armando/diplomado/modulo3/boo/include/ide.h \
+ /home/armando/diplomado/modulo3/boo/include/uuid.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/list.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/poison.h \
+ /home/armando/diplomado/modulo3/boo/include/part_efi.h \
+ /home/armando/diplomado/modulo3/boo/include/flash.h \
+ /home/armando/diplomado/modulo3/boo/include/image.h \
+ /home/armando/diplomado/modulo3/boo/include/compiler.h \
+ /usr/lib/gcc-cross/arm-linux-gnueabi/9/include/stddef.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/byteorder.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/byteorder/little_endian.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/byteorder/swab.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/byteorder/generic.h \
+ /home/armando/diplomado/modulo3/boo/include/lmb.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/u-boot.h \
+ /home/armando/diplomado/modulo3/boo/include/asm-generic/u-boot.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/u-boot-arm.h \
+ /home/armando/diplomado/modulo3/boo/include/command.h \
+ /home/armando/diplomado/modulo3/boo/include/linker_lists.h \
+ /home/armando/diplomado/modulo3/boo/include/hash.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/libfdt.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/libfdt_env.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/../../scripts/dtc/libfdt/libfdt.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/../../scripts/dtc/libfdt/libfdt_env.h \
+ /home/armando/diplomado/modulo3/boo/include/linux/../../scripts/dtc/libfdt/fdt.h \
+ /home/armando/diplomado/modulo3/boo/include/fdt_support.h \
+ /home/armando/diplomado/modulo3/boo/include/log.h \
+ /home/armando/diplomado/modulo3/boo/include/dm/uclass-id.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/global_data.h \
+ /home/armando/diplomado/modulo3/boo/include/asm-generic/global_data.h \
+ /home/armando/diplomado/modulo3/boo/include/membuff.h \
+ /home/armando/diplomado/modulo3/boo/include/init.h \
+ /home/armando/diplomado/modulo3/boo/include/display_options.h \
+ /home/armando/diplomado/modulo3/boo/include/u-boot/crc.h \
+ /home/armando/diplomado/modulo3/boo/include/net.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/cache.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/system.h \
+ /home/armando/diplomado/modulo3/boo/include/common.h \
+ /home/armando/diplomado/modulo3/boo/arch/arm/include/asm/barriers.h \
+ /home/armando/diplomado/modulo3/boo/include/bootstage.h \
+ /home/armando/diplomado/modulo3/boo/include/environment.h \
+ /home/armando/diplomado/modulo3/boo/include/mmc.h
+
+/home/armando/diplomado/modulo3/boo/include/linux/kconfig.h:
+
+include/generated/autoconf.h:
+
+include/config.h:
+
+/home/armando/diplomado/modulo3/boo/include/config_defaults.h:
+
+/home/armando/diplomado/modulo3/boo/include/config_uncmd_spl.h:
+
+/home/armando/diplomado/modulo3/boo/include/configs/am335x_evm.h:
+
+/home/armando/diplomado/modulo3/boo/include/configs/ti_am335x_common.h:
+
+include/asm/arch/omap.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/sizes.h:
+
+/home/armando/diplomado/modulo3/boo/include/configs/ti_armv7_omap.h:
+
+/home/armando/diplomado/modulo3/boo/include/configs/ti_armv7_common.h:
+
+/home/armando/diplomado/modulo3/boo/include/config_distro_bootcmd.h:
+
+/home/armando/diplomado/modulo3/boo/include/environment/ti/dfu.h:
+
+/home/armando/diplomado/modulo3/boo/include/environment/ti/mmc.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/config.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/kconfig.h:
+
+/home/armando/diplomado/modulo3/boo/include/config_fallbacks.h:
+
+/home/armando/diplomado/modulo3/boo/include/errno.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/errno.h:
+
+/home/armando/diplomado/modulo3/boo/include/time.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/typecheck.h:
+
+/home/armando/diplomado/modulo3/boo/include/asm-offsets.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/bitops.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/types.h:
+
+/home/armando/diplomado/modulo3/boo/include/asm-generic/bitsperlong.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/compiler.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/compiler-gcc.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/types.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/posix_types.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/stddef.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/posix_types.h:
+
+/usr/lib/gcc-cross/arm-linux-gnueabi/9/include/stdbool.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/bitops.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/proc-armv/system.h:
+
+/home/armando/diplomado/modulo3/boo/include/asm-generic/bitops/__fls.h:
+
+/home/armando/diplomado/modulo3/boo/include/asm-generic/bitops/__ffs.h:
+
+/home/armando/diplomado/modulo3/boo/include/asm-generic/bitops/fls.h:
+
+/home/armando/diplomado/modulo3/boo/include/asm-generic/bitops/fls64.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/bug.h:
+
+/home/armando/diplomado/modulo3/boo/include/vsprintf.h:
+
+/usr/lib/gcc-cross/arm-linux-gnueabi/9/include/stdarg.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/build_bug.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/printk.h:
+
+/home/armando/diplomado/modulo3/boo/include/stdio.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/delay.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/kernel.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/string.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/string.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/linux_string.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/stringify.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/ptrace.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/proc-armv/ptrace.h:
+
+/home/armando/diplomado/modulo3/boo/include/part.h:
+
+/home/armando/diplomado/modulo3/boo/include/blk.h:
+
+/home/armando/diplomado/modulo3/boo/include/efi.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/linkage.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/linkage.h:
+
+/home/armando/diplomado/modulo3/boo/include/ide.h:
+
+/home/armando/diplomado/modulo3/boo/include/uuid.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/list.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/poison.h:
+
+/home/armando/diplomado/modulo3/boo/include/part_efi.h:
+
+/home/armando/diplomado/modulo3/boo/include/flash.h:
+
+/home/armando/diplomado/modulo3/boo/include/image.h:
+
+/home/armando/diplomado/modulo3/boo/include/compiler.h:
+
+/usr/lib/gcc-cross/arm-linux-gnueabi/9/include/stddef.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/byteorder.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/byteorder/little_endian.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/byteorder/swab.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/byteorder/generic.h:
+
+/home/armando/diplomado/modulo3/boo/include/lmb.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/u-boot.h:
+
+/home/armando/diplomado/modulo3/boo/include/asm-generic/u-boot.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/u-boot-arm.h:
+
+/home/armando/diplomado/modulo3/boo/include/command.h:
+
+/home/armando/diplomado/modulo3/boo/include/linker_lists.h:
+
+/home/armando/diplomado/modulo3/boo/include/hash.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/libfdt.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/libfdt_env.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/../../scripts/dtc/libfdt/libfdt.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/../../scripts/dtc/libfdt/libfdt_env.h:
+
+/home/armando/diplomado/modulo3/boo/include/linux/../../scripts/dtc/libfdt/fdt.h:
+
+/home/armando/diplomado/modulo3/boo/include/fdt_support.h:
+
+/home/armando/diplomado/modulo3/boo/include/log.h:
+
+/home/armando/diplomado/modulo3/boo/include/dm/uclass-id.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/global_data.h:
+
+/home/armando/diplomado/modulo3/boo/include/asm-generic/global_data.h:
+
+/home/armando/diplomado/modulo3/boo/include/membuff.h:
+
+/home/armando/diplomado/modulo3/boo/include/init.h:
+
+/home/armando/diplomado/modulo3/boo/include/display_options.h:
+
+/home/armando/diplomado/modulo3/boo/include/u-boot/crc.h:
+
+/home/armando/diplomado/modulo3/boo/include/net.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/cache.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/system.h:
+
+/home/armando/diplomado/modulo3/boo/include/common.h:
+
+/home/armando/diplomado/modulo3/boo/arch/arm/include/asm/barriers.h:
+
+/home/armando/diplomado/modulo3/boo/include/bootstage.h:
+
+/home/armando/diplomado/modulo3/boo/include/environment.h:
+
+/home/armando/diplomado/modulo3/boo/include/mmc.h:

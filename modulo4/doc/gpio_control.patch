@@ -1,0 +1,47 @@
+diff --git a/drivers/misc/alan_device.c b/drivers/misc/alan_device.c
+index 81c7400dc..83ef27a26 100644
+--- a/drivers/misc/alan_device.c
++++ b/drivers/misc/alan_device.c
+@@ -14,6 +14,7 @@
+ #include <linux/cdev.h>
+ #include <linux/platform_device.h>
+ #include <linux/of_address.h>
++#include <linux/gpio.h>
+ 
+ static dev_t dev;
+ static struct cdev c_dev;
+@@ -24,6 +25,8 @@ static struct device_attribute alan_dev_attr1;
+ static unsigned int global_val;
+ static char data[32];
+ 
++struct gpio_desc *gpiod_alan;
++
+ static int alan_device_open(struct inode *inode, struct file *file) {
+ 	pr_info("alan_device_open\n");
+ 
+@@ -57,7 +60,15 @@ static long int alan_device_ioctl(struct file * file, unsigned int cmd, unsigned
+ 	switch(cmd){
+ 		case 0:
+ 			pr_info("Executing command 0 with args: %lu\n", args);
++
++			// Set gpio to low
++			gpiod_set_value(gpiod_alan, 0);
+ 		break;
++		case 1:
++			pr_info("Executing command 0 with args: %lu\n", args);
++
++			// Set gpio to high
++			gpiod_set_value(gpiod_alan, 1);
+ 		default:
+ 			pr_err("Command %d not supported\n", cmd);
+ 	}
+@@ -114,6 +125,9 @@ static int alan_device_probe(struct platform_device *pdev){
+ 	// Create sysfs interface
+ 	device_create_file(alan_device, &alan_dev_attr1);
+ 
++	// Get associated gpio from device tree attribute "alan-gpios"
++	gpiod_alan = devm_gpiod_get(&pdev->dev, "alan", GPIOD_OUT_HIGH);
++
+ 	return 0;
+ }
+ 

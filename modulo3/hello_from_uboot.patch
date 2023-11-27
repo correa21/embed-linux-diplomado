@@ -1,0 +1,13 @@
+diff --git a/board/ti/am335x/board.c b/board/ti/am335x/board.c
+index 9b7067040a..664b617257 100644
+--- a/board/ti/am335x/board.c
++++ b/board/ti/am335x/board.c
+@@ -793,6 +793,8 @@ int board_init(void)
+ 	}
+ #endif
+ 
++    printf("Hello from U-boot\n");
++
+ 	return 0;
+ }
+ 

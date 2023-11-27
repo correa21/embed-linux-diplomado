@@ -1,0 +1,4 @@
+ti-sysc.c:97:12:ti_sysc_child_post_remove	16	static
+ti-sysc.c:114:12:ti_sysc_child_pre_probe	16	static
+ti-sysc.c:136:12:ti_sysc_probe	16	static
+ti-sysc.c:131:12:ti_sysc_remove	8	static

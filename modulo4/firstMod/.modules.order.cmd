@@ -1,0 +1,1 @@
+cmd_/home/armando/diplomado/modulo4/firstMod/modules.order := {   echo /home/armando/diplomado/modulo4/firstMod/basic.ko; :; } | awk '!x[$$0]++' - > /home/armando/diplomado/modulo4/firstMod/modules.order
